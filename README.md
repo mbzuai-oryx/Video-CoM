@@ -31,7 +31,7 @@ Code, Dataset and Model will be released soon. Stay tuned! 🚀
 ## 🔥 Highlights
  
 - **Interactive Video Reasoning Framework**  
-  Moves beyond passive video encoding. The model actively performs **find-segment**, **find-frame**, and **spatial-zoom** operations throughout its reasoning trajectory.
+  Moves beyond passive video encoding by enabling the model to **actively rewatch specific moments, pause on key frames, and zoom into fine details** throughout its reasoning trajectory, allowing it to gather evidence step by step rather than relying on a single static video representation.
  
 - **Chain of Manipulations (CoM):**  
   A structured, interpretable reasoning mechanism where each step involves retrieving new visual evidence before continuing textual reasoning.
