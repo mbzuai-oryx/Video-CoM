@@ -29,21 +29,16 @@ Code, Dataset and Model will be released soon. Stay tuned! 🚀
  
 ---
 ## 🔥 Highlights
+
+- **Interactive Video Reasoning Framework**: Moves beyond passive video encoding by enabling the model to **actively rewatch specific moments, pause on key frames, and zoom into fine details** throughout its reasoning trajectory, allowing it to gather evidence step by step rather than relying on a single static video representation.
  
-- **Interactive Video Reasoning Framework**  
-  Moves beyond passive video encoding by enabling the model to **actively rewatch specific moments, pause on key frames, and zoom into fine details** throughout its reasoning trajectory, allowing it to gather evidence step by step rather than relying on a single static video representation.
+- **Chain of Manipulations (CoM)**: A structured, interpretable reasoning mechanism where each step involves retrieving new visual evidence before continuing textual reasoning.
  
-- **Chain of Manipulations (CoM):**  
-  A structured, interpretable reasoning mechanism where each step involves retrieving new visual evidence before continuing textual reasoning.
+- **Video-CoM-Instruct (18K) - Manipulation-Driven Dataset**: Carefully curated videos + dense annotations designed specifically for active visual reasoning.
  
-- **Manipulation-Driven Dataset: Video-CoM-Instruct (18K):**  
-  Carefully curated videos + dense annotations designed specifically for active visual reasoning.
+- **Reasoning-Aware GRPO (RA-GRPO)**: Unlike accuracy-only RL, RA-GRPO provides **step-level reasoning rewards**, guiding consistent and visually grounded reasoning.
  
-- **Reasoning-Aware GRPO (RA-GRPO):**  
-  Unlike accuracy-only RL, RA-GRPO provides **step-level reasoning rewards**, guiding consistent and visually grounded reasoning.
- 
-- **Srong Performance:**  
-  We show strong performance across **five reasoning benchmarks** and two generic video-understanding benchmarks, along with **significant gains on our manipulation-focused benchmark**, demonstrating the effectiveness of interactive visual reasoning.
+- **Srong Performance**: We show strong performance across **five reasoning benchmarks** and two generic video-understanding benchmarks, along with **significant gains on our manipulation-focused benchmark**, demonstrating the effectiveness of interactive visual reasoning.
  
  
 ---
