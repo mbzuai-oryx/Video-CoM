@@ -14,7 +14,7 @@
  
 ## 📣 Announcement
  
-Code, Dataset and Model will be released soon.
+Code, Dataset and Model will be released soon. Stay tuned! 🚀
  
 ---
  
@@ -30,20 +30,20 @@ Code, Dataset and Model will be released soon.
 ---
 ## 🔥 Highlights
  
-- **Interactive Video Reasoning Framework:**  
+- **Interactive Video Reasoning Framework**  
   Moves beyond passive video encoding. The model actively performs **find-segment**, **find-frame**, and **spatial-zoom** operations throughout its reasoning trajectory.
  
 - **Chain of Manipulations (CoM):**  
   A structured, interpretable reasoning mechanism where each step involves retrieving new visual evidence before continuing textual reasoning.
  
-- **Manipulation-Driven Dataset — Video-CoM-Instruct (18K):**  
+- **Manipulation-Driven Dataset: Video-CoM-Instruct (18K):**  
   Carefully curated videos + dense annotations designed specifically for active visual reasoning.
  
 - **Reasoning-Aware GRPO (RA-GRPO):**  
   Unlike accuracy-only RL, RA-GRPO provides **step-level reasoning rewards**, guiding consistent and visually grounded reasoning.
  
 - **Srong Performance:**  
-  Achieves strong results across **nine video-reasoning benchmarks**, including large gains on long-horizon and fine-grained reasoning tasks.
+  We show strong performance across **five reasoning benchmarks** and two generic video-understanding benchmarks, along with **significant gains on our manipulation-focused benchmark**, demonstrating the effectiveness of interactive visual reasoning.
  
  
 ---
@@ -62,7 +62,17 @@ Building on this foundation, each example follows a structured reasoning format 
  
 ---
 
-## Attention to Visual Cues
+## ⚡ Reasoning-Aware GRPO (RA-GRPO)
+ 
+Most existing video reasoning models rely solely on final-answer rewards, offering no guidance on whether intermediate reasoning steps are visually grounded or correct. To address this, we introduce **reasoning-aware rewards** enabled by our dense temporal and spatial annotations, allowing the model to receive feedback at every manipulation step. Reasoning-Aware GRPO (RA-GRPO) enhances interactive video reasoning by providing step-level rewards by evaluating the correctness of predicted manipulations.
+
+<p align="center">
+  <img src="images/video_com_ra_grpo.png" alt="Figure 2" width="90%">
+</p>
+
+---
+
+## 👁️ Attention to Visual Cues
  
 Video-CoM maintains **dynamic visual attention** throughout its reasoning process, re-engaging with frames and regions whenever new evidence is needed. Unlike prior models that tend to drift toward text tokens and rely on world knowledge, Video-CoM’s attention consistently anchors to vision tokens at each manipulation step, whether locating a segment, isolating a frame, or zooming into fine details.
 
