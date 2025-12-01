@@ -8,7 +8,7 @@
  
 #### **MBZUAI, University of California Merced, Google Research, Australian National University, Linköping University**
  
-[![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](TBD)
+[![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](https://arxiv.org/abs/2511.23477)
  
 ---
  
@@ -82,7 +82,7 @@ Video-CoM maintains **dynamic visual attention** throughout its reasoning proces
 @article{rasheed2025videocom,
     title={Video-CoM: Interactive Video Reasoning via Chain of Manipulations},
     author={Rasheed, Hanoona and Zumri, Mohammed and Maaz, Muhammad and Yang, Ming-Hsuan and Khan, Fahad S. and Khan, Salman},
-    journal={arXiv preprint arXiv:TODO},
+    journal={arXiv preprint arXiv:2511.23477},
     year={2025}
 }
 ```
