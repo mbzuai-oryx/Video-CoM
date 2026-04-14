@@ -1,0 +1,10 @@
+torch==2.7.0
+torchvision==0.22.0
+transformers==4.51.1
+accelerate==1.10.1
+numpy==2.1.2
+peft==0.17.1
+pyarrow==21.0.0
+pydantic==2.11.7
+tokenizers==0.21.4
+trl==0.17.0

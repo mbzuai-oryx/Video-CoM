@@ -1,4 +1,4 @@
-# Video-CoM: Interactive Video Reasoning via Chain of Manipulations
+# Video-CoM: Interactive Video Reasoning via Chain of Manipulations (🔥 CVPR 2026)
 <!-- <img src="images/icon.png" height="40"> -->
 <p align="center">
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
@@ -6,18 +6,26 @@
  
 #### [Hanoona Rasheed](https://github.com/hanoonaR), [Mohammed Zumri](), [Muhammad Maaz](https://www.mmaaz60.com), [Ming-Hsuan Yang](https://scholar.google.com.pk/citations?user=p9-ohHsAAAAJ&hl=en), [Fahad Khan](https://sites.google.com/view/fahadkhans/home), [Salman Khan](https://salman-h-khan.github.io/)
  
-#### **MBZUAI, University of California Merced, Google Research, Australian National University, Linköping University**
- 
+#### **MBZUAI, University of California Merced, Linköping University, Australian National University**
+
 [![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](https://arxiv.org/abs/2511.23477)
- 
+[![Hugging Face Collection](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Collection-blue)](https://huggingface.co/collections/MBZUAI/video-com)
+
 ---
- 
-## 📣 Announcement
- 
-Code, Dataset and Model will be released soon. Stay tuned! 🚀
- 
+
+## 📣 Announcements
+
+**🔥🔥 Update:** We release the **code**, the **Video-CoM models**, and the **datasets** used in the development of Video-CoM.
+
+- **Paper:** https://arxiv.org/abs/2511.23477
+- **Code:** for training: [SFT + GRPO](train/README.md)
+- **Models:** 
+  - **Video-CoM (final model):** https://huggingface.co/MBZUAI/Video-CoM
+  - **Video-CoM-SFT (after SFT):** https://huggingface.co/MBZUAI/Video-CoM-SFT
+- **Dataset:** https://huggingface.co/datasets/MBZUAI/Video-CoM-Dataset
+
 ---
- 
+
 ## 💡 Video-CoM
  
 **Video-CoM** introduces a new paradigm for interactive video reasoning, enabling models to **think with videos** instead of merely thinking about them. Instead of relying on a single static video encoding, Video-CoM performs iterative visual actions (segment finding, frame selection, and spatial zooming) to actively gather evidence through a **Chain of Manipulations** (CoM).
@@ -75,6 +83,28 @@ Video-CoM maintains **dynamic visual attention** throughout its reasoning proces
   <img src="images/visual_attention.png" alt="Figure 2" width="90%">
 </p>
 
+## Installation
+
+A minimal environment for demo and evaluation:
+
+```bash
+conda create -n video-com python=3.12 -y
+conda activate video-com
+pip install -U pip
+
+# We use torch v2.7.0, torchvision v0.22.0 and transformers v2.51.1 in the development of Video-CoM
+# Please see requirements.txt for more details
+pip install -r requirements.txt
+```
+
+## Training
+
+See [`train/README.md`](train/README.md) for details.
+
+```bash
+bash train/scripts/train_sft.sh
+bash train/scripts/train_grpo.sh
+```
 
 ## 📜 Citation
  
