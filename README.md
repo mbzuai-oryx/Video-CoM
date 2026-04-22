@@ -1,4 +1,4 @@
-# Video-CoM: Interactive Video Reasoning via Chain of Manipulations (🔥 CVPR 2026)
+# Video-CoM: Interactive Video Reasoning via Chain of Manipulations (🔥🔥 CVPR 2026)
 <!-- <img src="images/icon.png" height="40"> -->
 <p align="center">
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
